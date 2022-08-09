@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <script src="js/chessboard-1.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+<style>
+    *{font-family: 'Roboto', sans-serif;}
+</style>
+      
+    <title>Blitzkrieg Chess (Proof Of COncept)</title>
+</head>
+<body>
+    
+    <div class="grid grid-rows-2 m-2 lg:grid-cols-2">
+    <!-- board -->
+    <div>
+        <div id="myBoard" style="width: 800px" class="m-5"></div>
+        <div class="ml-5 text-base font-bold" id="playing"></div>
+    </div>
+    
+    <div class="mt-4">
+        <div id="status" class="text-base"></div>
+        <div id="instruction" class="mt-4" >
+            <h1 class="text-2xl font-bold">Instructions</h1>
+            <ul class="mt-4 text-base">
+                <li class="mt-2">All the normal rules of chess apply</li>
+                <li class="mt-2">The only additional rule is that after every 30 seconds a 
+                    <i>blitzkrieg </i>
+                    would take place on any random square on the board. 
+                    <br>And if that square has a piece then that piece would be removed from the game ,barring the kings, and the game would the continue as normal.
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+
+
+</body>
+<script src="myscript.js"></script>
+
+</html>
